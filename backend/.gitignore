@@ -1,0 +1,30 @@
+# Backend .gitignore
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Uploads and runtime data
+uploads/
+uploads/**
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build / coverage
+dist/
+build/
+coverage/
+
+# Misc
+.DS_Store
+.vscode/
+.idea/
+*.sqlite3
+*.db

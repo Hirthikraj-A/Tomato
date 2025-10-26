@@ -1,0 +1,24 @@
+.# Admin app .gitignore (Vite / React admin)
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build / cache
+dist/
+build/
+.vite/
+.cache/
+
+# Logs
+npm-debug.log*
+*.log
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
