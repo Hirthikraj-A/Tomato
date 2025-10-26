@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Verify from "./pages/Verify/Verify";
 import MyOrders from "./pages/MyOrders/MyOrders";
 
+// This is the main App component that sets up routing and global components
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   return (
