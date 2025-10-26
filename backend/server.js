@@ -12,7 +12,7 @@ dotenv.config(); // must come before using any process.env variables
 // app config
 const app = express();
 const port =process.env.PORT || 4000;
-
+app.get("/", (req, res) => res.send("API running"));
 //middlewares
 app.use(express.json());
 app.use(cors());
@@ -33,3 +33,4 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server Started on port: ${port}`);
 });
+export default app;

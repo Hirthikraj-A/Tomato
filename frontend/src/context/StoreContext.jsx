@@ -3,10 +3,11 @@ import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 export const StoreContext = createContext(null);
+//const url = import.meta.env.VITE_BACKEND_URL || "https://your-backend.vercel.app";
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+  const url = import.meta.env.VITE_BACKEND_URL || "https://your-backend.vercel.app";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
